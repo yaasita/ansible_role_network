@@ -1,0 +1,9 @@
+---
+
+- name: interfacesの設定
+  template: src=interfaces_ubuntu.j2 dest=/etc/network/interfaces owner=root group=root mode=0644
+  when: ansible_distribution == "Ubuntu"
+
+- name: interfacesの設定
+  template: src=interfaces_debian.j2 dest=/etc/network/interfaces owner=root group=root mode=0644
+  when: ansible_distribution == "Debian"

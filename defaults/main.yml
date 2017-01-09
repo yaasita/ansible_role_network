@@ -1,0 +1,7 @@
+---
+# network
+network_ipaddress: 10.0.0.1
+network_netmask: 255.255.0.0
+network_gateway: 10.0.0.1
+network_dns_nameservers:
+  - 10.0.10.145
